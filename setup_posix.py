@@ -85,6 +85,7 @@ def get_config():
         ('__version__', metadata['version']),
         ]
     create_release_file(metadata)
+    libraries.append('stdc++')
     del metadata['version_info']
     ext_options = dict(
         name = "_mysql",
